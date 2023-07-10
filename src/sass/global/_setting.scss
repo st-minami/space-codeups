@@ -13,12 +13,12 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$han-font-family: "source-han-sans-japanese, sans-serif";
+$sans-font-family: "'Noto Sans JP', sans-serif";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $sans-font-family;
 }
 
 // フォントウェイト
@@ -37,3 +37,6 @@ $white: #fff;
 $text-color: #EBEBEB;
 $background: #021212;
 $ac-color: #99D4D9;
+
+
+
