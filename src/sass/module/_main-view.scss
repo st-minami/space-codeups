@@ -1,7 +1,16 @@
+@use "global" as *;
+
 .main-view {
-    height: rem(730);
+    height: vw(1440, 730);
     background-image: url(../images/common/mv.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    display: flex;
+    align-items: center;
+    padding-left: vw(1440, 200);
+}
+
+.main-view__title {
+    width: vw(1440, 640);
 }
