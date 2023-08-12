@@ -16,7 +16,7 @@
 .about-block__text {
     font-size: rem(18);
     font-weight: $normal;
-    line-height: (30 / 18);
+    line-height: calc(30 / 18);
     margin-top: rem(24);
 }
 
