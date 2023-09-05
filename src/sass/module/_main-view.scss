@@ -8,9 +8,10 @@
     background-position: top;
     display: flex;
     align-items: center;
-    padding-left: vw(1440, 200);
+    padding-left: calc(191 / 1440 * 100vw);
+    padding-top: rem(5);
 }
 
 .main-view__title {
-    width: vw(1440, 640);
+    width: calc( 658 / 1440 * 100vw);
 }
