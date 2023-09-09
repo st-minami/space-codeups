@@ -9,6 +9,9 @@
     width: 100%;
     padding: 0 rem(25);
     margin: auto;
+    @include mq(md) {
+        max-width: rem(540);
+    }
 }
 
 .recruit__title {
@@ -17,6 +20,9 @@
     font-weight: $bold;
     line-height: 1.2857142;
     position: relative;
+    @include mq(md) {
+        font-size: rem(24);
+    }
 }
 
 .recruit__title::after {
@@ -32,12 +38,17 @@
 
 .recruit__items {
     margin-top: rem(51);
-
+    @include mq(md) {
+        margin-top: rem(24);
+    }
 }
 
 
 .recruit__item {
     display: flex;
+    @include mq(md) {
+        display: block;
+    }
 }
 
 
@@ -51,6 +62,11 @@
     border-bottom: 2px solid #99D4D9;
     display: flex;
     align-items: center;
+    @include mq(md) {
+        max-width: initial;
+        border-bottom: none;
+        padding-top: rem(12.5);
+    }
 } 
 
 .recruit__description {
@@ -63,14 +79,27 @@
     padding-bottom: rem(16);
     padding-left: rem(34);
     border-bottom: 2px solid #EBEBEB;
+    @include mq(md) {
+        border-bottom: 1px solid #EBEBEB;
+        margin-left: 0;
+        padding-left: rem(12);
+        padding-right: rem(12);
+        font-size: rem(14);
+    }
 }
 
 .recruit__item:first-child {
     .recruit__term  {
         border-top: 2px solid #99D4D9;
+        @include mq(md) {
+            border-top: 1px solid #EBEBEB;
+        }
     }
 
     .recruit__description {
         border-top: 2px solid #EBEBEB;
+        @include mq(md) {
+            border-top: none;
+        }
     }
 }
